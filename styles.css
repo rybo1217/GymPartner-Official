@@ -2,12 +2,14 @@
 
 
 body{
-  background-color: darkgray;
+  background-color: rgb(22, 23, 23);
+  font-family: Rockwell;
 }
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -16,9 +18,10 @@ body{
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 30px 160px;
+  padding: 30px 154px;
   text-decoration: none;
   font-size: 17px;
+  
 }
 
 /* Change the color of links on hover */
@@ -29,11 +32,48 @@ body{
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #0985be;
   color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+.intro, .outro{
+  display: flex;
+  justify-content: center;
+}
+
+.menuBox{
+  display: flex;
+  justify-content: center;
+}
+#boxes{
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+  background-color:  rgb(22, 23, 23);
+  font-size: 50px;
+  border: 5px solid  #0985be;
+
+  line-height: 120px;
+}
+
+#boxes :hover{
+  background-color: #0985be;
+}
+
+a.homeMenu {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+
+  color: white;
+  
 }
