@@ -23,22 +23,30 @@
 </header>
 <body>
 
-  <form>
+  <form style="width: 93.9%;">
     <div class="formBox">
-        <label for="date">Date</label>
-        <input type="text" id="date" placeholder="date"/>
+        <label for="date">Date </label><br>
+        <input style="width:200px ;text-align:center; font-size: 25px;" type="text" id="date" placeholder="Date"/>
+  <br>
+        <label for="ent">Entry</label><br>
+        <input style="padding-bottom: 400px;width: 900px;font-size: 25px;" type="text" id="ent" placeholder="Entry"/>
+    <br>
+    
+        <button id="btn" style="width:200px ;height:50px;font-size: 30px;">Click to Add</button>
     </div>
-    <div class="formBox">
-        <label for="ent">Entry</label>
-        <input type="text" id="ent" placeholder="Entry"/>
-    </div>
-    <div class="formBox">
-        <button id="btn">Click to Add</button>
-    </div>
-    <div id="msg">
-        <pre></pre>
-    </div>
+   
+  </div></div>
 </form>
+
+<form class="res"; style="width: 93.9%;">
+  <div class="formBox">
+     
+  <div id="msg" style="font-size: 40px;">
+      <pre></pre>
+  </div>
+</div></div>
+</form>
+
    
 <script>
   //make it so they can see all their entries in a cleaner dsisplay
@@ -47,7 +55,7 @@
         const addentry = (ev)=>{
             ev.preventDefault();  //to stop the form submitting
             let entry = {
-                date: document.getElementById('date').value,
+                Date: document.getElementById('date').value,
                 Entry: document.getElementById('ent').value
             }
             entrys.push(entry);
@@ -56,7 +64,7 @@
 
             //for display purposes only
             console.warn('added' , {entrys} );
-            let pre = document.querySelector('#msg pre');
+            let pre = document.querySelector('#msg');
             pre.textContent = '\n' + JSON.stringify(entrys, '\t', 2);
 
             //saving to localStorage
@@ -66,6 +74,10 @@
             document.getElementById('btn').addEventListener('click', addentry);
         });
 
+        $("#res").submit(function(e) {
+    e.preventDefault();
+});
+// work on stopping page to refresh
 </script>
 
 </body>

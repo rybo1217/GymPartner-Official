@@ -77,7 +77,7 @@ a.homeMenu {
   color: white;
   
 }
-.bb1,.bb2,.bb3,.bb4{/*weights for barbell elements*/
+.bb1,.bb2,.bb3,.bb4,#btn{/*weights for barbell elements*/
   height: 100px;
   margin-top: 2%;
   background-color:  rgb(22, 23, 23);
@@ -100,13 +100,13 @@ form{
   color: white;
 }
 #ff,#tf,#tff,#te,#fi,#tp{
-  height: 60px;
+  height: 90px;
   margin-top: 2%;
   background-color:  rgb(22, 23, 23);
   font-size: 50px;
   border: 5px solid  #0985be;
   margin-right: 5%;
-  width: 10%;
+  width: 15%;
   color: white;
 }
 label{
@@ -114,5 +114,45 @@ label{
 }
 .barbellWeight{
   width: 94%;
+
+}
+input[type=text]
+{
+  width: 200px;
+}
+.formBox{
+  text-align: center;
+  
+}
+/* Style inputs */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 5px solid  #0985be;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 5px solid  #0985be;
+}
+
+.res{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
