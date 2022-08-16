@@ -156,3 +156,10 @@ input[type=submit] {
   flex-wrap: wrap;
 
 }
+.formBox1 a
+{
+  
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
